@@ -25,9 +25,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 
 var Slider = function Slider(props) {
-  var initialValue = props.value ? props.value : props.multiple ? [].concat(_toConsumableArray(props.settings.start)) : props.settings.start;
-
-  var _useState = (0, _react.useState)(initialValue),
+  var _useState = (0, _react.useState)(0),
       _useState2 = _slicedToArray(_useState, 2),
       value = _useState2[0],
       setValue = _useState2[1];
@@ -64,10 +62,17 @@ var Slider = function Slider(props) {
   var refTrack = (0, _react.useRef)();
   var refTrackFill = (0, _react.useRef)();
 
+  var initialValue = (0, _react.useMemo)(function () {
+    return props.value ? props.value : props.multiple ? [].concat(_toConsumableArray(props.settings.start)) : props.settings.start;
+  }, [props.value, props.multiple, props.settings.start]);
   var numberOfThumbs = (0, _react.useMemo)(function () {
     return props.multiple ? value.length : 1;
   }, [props.multiple, value]);
   var offset = 10;
+
+  (0, _react.useEffect)(function () {
+    setValue(initialValue);
+  }, [initialValue]);
 
   var precision = (0, _react.useMemo)(function () {
     var split = String(props.settings.step).split(".");
