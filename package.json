@@ -1,11 +1,10 @@
 {
   "name": "react-semantic-ui-range",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "description": "A Slider React Component for Semantic-UI",
-  "main": "dist/index.js",
+  "main": "build/index.js",
   "scripts": {
     "build": "babel lib -d build",
-    "build:module": "babel lib -d dist",
     "build:watch": "babel lib -w -d build",
     "lint": "eslint lib/**; exit 0",
     "lint:watch": "esw -w lib/**",
