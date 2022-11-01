@@ -1,6 +1,8 @@
 # react-semantic-ui-range
 
-This is a React Component range slider for Semantic UI
+This is a React Component Range Slider for Semantic UI
+
+Fork from https://github.com/iozbeyli/react-semantic-ui-range but made it as a functional component using React Hooks and added component re-render on window resize.
 
 It is developed based on https://github.com/tyleryasaka/semantic-ui-range but has additional functionalities
 
@@ -9,7 +11,7 @@ The demo for the project can be found here: https://iozbeyli.github.io/react-sem
 The original library was using jQuery so I changed the parts that use jQuery to make it more compatible with React.
 
 ```
-  npm i react-semantic-ui-range
+yarn add git+https://github.com/drdmitry/react-semantic-ui-range.git
 ```
 
 Sample Usage
@@ -56,5 +58,3 @@ const App = props => {
 
 export default App;
 ```
-
-

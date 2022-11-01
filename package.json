@@ -1,10 +1,10 @@
 {
   "name": "react-semantic-ui-range",
-  "version": "0.8.1",
+  "version": "0.8.2",
   "description": "A Slider React Component for Semantic-UI",
-  "main": "build/index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "build": "babel lib -d build",
+    "build": "babel lib -d dist",
     "build:watch": "babel lib -w -d build",
     "lint": "eslint lib/**; exit 0",
     "lint:watch": "esw -w lib/**",
@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iozbeyli/react-semantic-ui-range.git"
+    "url": "git+https://github.com/drdmitry/react-semantic-ui-range.git"
   },
-  "author": "iozbeyli",
+  "author": "drdmitry",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/iozbeyli/react-semantic-ui-range/issues"
+    "url": "https://github.com/drdmitry/react-semantic-ui-range/issues"
   },
-  "homepage": "https://github.com/iozbeyli/react-semantic-ui-range#readme",
+  "homepage": "https://github.com/drdmitry/react-semantic-ui-range#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
